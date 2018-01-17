@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,97 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="North_East_South_West" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C4r-Rh-1vQ">
+                                <rect key="frame" x="315" y="318" width="30" height="30"/>
+                                <state key="normal" title="East"/>
+                                <connections>
+                                    <action selector="outputPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CAB-6i-JP3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e9P-Gm-Lh9">
+                                <rect key="frame" x="30" y="50" width="315" height="30"/>
+                                <state key="normal" title="North"/>
+                                <connections>
+                                    <action selector="outputPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j7V-CU-tiH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p5T-Hu-bK4">
+                                <rect key="frame" x="30" y="607" width="315" height="30"/>
+                                <state key="normal" title="South"/>
+                                <connections>
+                                    <action selector="outputPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nuA-JF-DQ0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QSu-oT-cFv">
+                                <rect key="frame" x="30" y="318" width="35" height="30"/>
+                                <state key="normal" title="West"/>
+                                <connections>
+                                    <action selector="outputPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zIe-xC-0N5"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="C4r-Rh-1vQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="0T0-6g-E7F"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="C4r-Rh-1vQ" secondAttribute="trailing" constant="30" id="8F9-wE-Ijw"/>
+                            <constraint firstItem="e9P-Gm-Lh9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CmB-lN-Vxw"/>
+                            <constraint firstItem="QSu-oT-cFv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="I9w-AH-AZJ"/>
+                            <constraint firstItem="e9P-Gm-Lh9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="Rpu-78-07C"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="p5T-Hu-bK4" secondAttribute="trailing" constant="30" id="Z0R-Vy-UGo"/>
+                            <constraint firstItem="e9P-Gm-Lh9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="c5V-W4-9jA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="e9P-Gm-Lh9" secondAttribute="trailing" constant="30" id="hrZ-xq-cVG"/>
+                            <constraint firstItem="p5T-Hu-bK4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mEC-RB-VL5"/>
+                            <constraint firstItem="QSu-oT-cFv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="sK3-k3-LJQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="p5T-Hu-bK4" secondAttribute="bottom" constant="30" id="tLo-4b-au1"/>
+                            <constraint firstItem="p5T-Hu-bK4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="xMb-Di-tx6"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <segue destination="mF5-RN-XBv" kind="presentation" identifier="outputPressed" id="G4r-lx-Clx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="669.60000000000002" y="31.934032983508249"/>
+        </scene>
+        <!--Other View Controller-->
+        <scene sceneID="2ck-f5-vXp">
+            <objects>
+                <viewController id="mF5-RN-XBv" customClass="OtherViewController" customModule="North_East_South_West" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IIO-OR-dDg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NoB-Gu-GfZ">
+                                <rect key="frame" x="164" y="318" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="dissmissButtonPressed:" destination="mF5-RN-XBv" eventType="touchUpInside" id="gRn-Ci-yrf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="NoB-Gu-GfZ" firstAttribute="centerY" secondItem="IIO-OR-dDg" secondAttribute="centerY" id="eV0-nA-869"/>
+                            <constraint firstItem="NoB-Gu-GfZ" firstAttribute="centerX" secondItem="IIO-OR-dDg" secondAttribute="centerX" id="xym-65-Qct"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tEb-Km-fLG"/>
+                    </view>
+                    <connections>
+                        <outlet property="secondPageButton" destination="NoB-Gu-GfZ" id="V5x-wx-jNv"/>
+                        <segue destination="zjz-ZG-A1j" kind="unwind" identifier="unwindToThisViewController" unwindAction="unwindToThisViewControllerWithSegue:" id="phf-nk-vL8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4yI-vi-atJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="zjz-ZG-A1j" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1575" y="32"/>
         </scene>
     </scenes>
 </document>

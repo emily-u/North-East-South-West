@@ -14,6 +14,7 @@
 		A191B0CA200F18BC004BE41D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A191B0C8200F18BC004BE41D /* LaunchScreen.storyboard */; };
 		A191B0D5200F18BC004BE41D /* North_East_South_WestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A191B0D4200F18BC004BE41D /* North_East_South_WestTests.swift */; };
 		A191B0E0200F18BD004BE41D /* North_East_South_WestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A191B0DF200F18BD004BE41D /* North_East_South_WestUITests.swift */; };
+		A191B0F0200F26C6004BE41D /* OtherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A191B0EF200F26C6004BE41D /* OtherViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		A191B0DB200F18BD004BE41D /* North East South WestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "North East South WestUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A191B0DF200F18BD004BE41D /* North_East_South_WestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = North_East_South_WestUITests.swift; sourceTree = "<group>"; };
 		A191B0E1200F18BD004BE41D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A191B0EF200F26C6004BE41D /* OtherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				A191B0BF200F18BC004BE41D /* AppDelegate.swift */,
 				A191B0C1200F18BC004BE41D /* ViewController.swift */,
+				A191B0EF200F26C6004BE41D /* OtherViewController.swift */,
 				A191B0C3200F18BC004BE41D /* Main.storyboard */,
 				A191B0C6200F18BC004BE41D /* Assets.xcassets */,
 				A191B0C8200F18BC004BE41D /* LaunchScreen.storyboard */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A191B0C2200F18BC004BE41D /* ViewController.swift in Sources */,
+				A191B0F0200F26C6004BE41D /* OtherViewController.swift in Sources */,
 				A191B0C0200F18BC004BE41D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
